@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "be-comm-messages"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "gzw/messages" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.8.2"
+be-comm-constants = {path = "../be-comm-constants", develop = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
