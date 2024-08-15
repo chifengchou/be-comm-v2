@@ -8,6 +8,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
+be-comm-messages = {path = "packages/be-comm-messages", develop = true}
 
 [tool.poetry.group.dev.dependencies]
 be-comm-constants = {path = "packages/be-comm-constants", develop = true}
@@ -15,3 +16,9 @@ be-comm-db-models = {path = "packages/be-comm-db-models", develop = true}
 be-comm-messages = {path = "packages/be-comm-messages", develop = true}
 pytest = "^8.3.2"
 
+[tool.pytest.ini_options]
+addopts = "-v -x --color=yes"
+testpaths = [
+    "tests"
+]
+log_cli = 1
