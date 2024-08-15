@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "be-comm-v2"
+version = "0.1.0"
+description = "be-common-v2 root"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+be-comm-constants = {path = "packages/be-comm-constants", develop = true}
+be-comm-db-models = {path = "packages/be-comm-db-models", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
