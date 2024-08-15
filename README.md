@@ -35,6 +35,18 @@ Having said that, we can always switch in the future if we find PyPi useful[*2].
 [*2] That entails to change path-dependency to version-dependency on-the-fly. 
 Poetry does not support it out-of-box but there are some plugins available.
 
+# Install
+
+```shell
+❯ python --version
+Python 3.11.5
+❯ python -m venv .venv
+❯ source .venv/bin/activate
+❯ poetry install --sync --no-root --with dev
+❯ poetry run pytest
+```
+
+
 # How to update dependencies for a packages/my_pkg
 Following either one of the following ways to update dependencies for a package.
 
