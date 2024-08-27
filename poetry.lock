@@ -52,6 +52,7 @@ develop = true
 
 [package.dependencies]
 be-comm-constants = {path = "../be-comm-constants", develop = true}
+deco = {path = "../deco", develop = true}
 pydantic = "^2.8.2"
 
 [package.source]
@@ -68,6 +69,19 @@ files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
+
+[[package]]
+name = "deco"
+version = "0.6.3"
+description = "A decorator for concurrency"
+optional = false
+python-versions = "*"
+files = []
+develop = true
+
+[package.source]
+type = "directory"
+url = "packages/deco"
 
 [[package]]
 name = "greenlet"
@@ -502,4 +516,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "83fb6bc6e44d05a23d56bcc48c8cded6d80dc70e5750cbaa631322920c61b15d"
+content-hash = "f478bb9b10500ea03aa6b0e9dfc63fc323f765a1d02893e7b6fe3595046a880e"

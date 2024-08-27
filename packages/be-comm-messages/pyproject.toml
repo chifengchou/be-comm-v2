@@ -12,9 +12,10 @@ packages = [
 python = "^3.11"
 pydantic = "^2.8.2"
 be-comm-constants = {path = "../be-comm-constants", develop = true}
-
-[tool.poetry.group.dev.dependencies]
 deco = {path = "../deco", develop = true}
+
+# [tool.poetry.group.dev.dependencies]
+# deco = {path = "../deco", develop = true}
 
 [build-system]
 requires = ["poetry-core"]

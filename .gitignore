@@ -6,8 +6,7 @@ package-lock.json
 *.whl
 .idea
 
-# Ignore packages/*/poetry.lock
-**/poetry.lock
+packages/*/poetry.lock
 
 
 # Byte-compiled / optimized / DLL files
