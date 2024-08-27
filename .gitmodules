@@ -1,0 +1,3 @@
+[submodule "packages/deco"]
+	path = packages/deco
+	url = https://github.com/alex-sherman/deco
